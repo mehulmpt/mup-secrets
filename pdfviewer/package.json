@@ -1,0 +1,21 @@
+{
+  "name": "pdfviewer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+	"start": "electron .",
+	"build": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=icon.png --prune=true --out=release-builds",
+	"buildwindows": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --arch=ia32 --icon=\"icon.png\" --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dialogs": "^1.1.20",
+    "electron": "^4.0.4"
+  },
+  "devDependencies": {
+    "electron-packager": "^13.0.1"
+  },
+  "description": ""
+}
